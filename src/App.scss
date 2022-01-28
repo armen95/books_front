@@ -1,0 +1,23 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.books_app {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+}
+
+//MOBILE
+@media (max-width: 1024px) {
+  .books_app {
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 1fr;
+  }
+}

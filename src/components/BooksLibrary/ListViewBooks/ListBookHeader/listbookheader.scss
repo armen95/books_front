@@ -1,0 +1,34 @@
+.books_lists_header {
+  display: grid;
+  grid-template-columns: 31% 23% 23% 23%;
+  border-radius: 18px;
+  align-items: center;
+  padding: 0 12px;
+
+  > div {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #969696;
+
+    > span {
+      cursor: pointer;
+    }
+  }
+}
+
+//MOBILE
+@media (max-width: 1024px) {
+  .books_lists_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .books_lists_header_genre {
+    display: none;
+  }
+  .books_lists_header_last_opened {
+    display: none;
+  }
+}

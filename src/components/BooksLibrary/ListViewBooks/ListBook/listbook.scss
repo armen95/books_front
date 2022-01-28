@@ -1,0 +1,136 @@
+.book_list_container {
+  display: grid;
+  grid-template-columns: 31% 23% 23% 23%;
+  border-radius: 18px;
+  align-items: center;
+  height: 114px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.book_list_image_block {
+  display: flex;
+  align-items: center;
+
+  .book_list_img {
+    min-width: 60px;
+    min-height: 90px;
+    border-radius: 12px;
+    margin-right: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .book_list_name_block {
+    > h2 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    > span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+}
+.book_list_genre {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  display: block;
+}
+.book_list_progression {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.book_list_lastopened {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #696969;
+  padding-left: 30px;
+  display: block;
+}
+
+.book_name_block {
+  margin-top: 15px;
+
+  > h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  > span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #5c5c5c;
+  }
+}
+
+//MODE
+.book_name_block_dm {
+  > h2 {
+    color: #f0f0f0;
+  }
+  > span {
+    color: #969696;
+  }
+}
+.book_name_block_lm {
+  > h2 {
+    color: black;
+  }
+  > span {
+    color: #696969;
+  }
+}
+
+.book_list_container_dm {
+  color: #969696;
+  &:hover {
+    background: rgb(20, 20, 20);
+  }
+}
+.book_list_container_lm {
+  color: #696969;
+  &:hover {
+    background: #f9f9f9;
+  }
+}
+.book_name_block_dm {
+  > h2 {
+    color: #f0f0f0;
+  }
+}
+.book_name_block_lm {
+  > h2 {
+    color: #1e1e1e;
+  }
+}
+
+//MOBILE
+@media (max-width: 1024px) {
+  .book_list_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .book_list_genre {
+    display: none;
+  }
+  .book_list_lastopened {
+    display: none;
+  }
+}

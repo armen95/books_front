@@ -1,0 +1,15 @@
+.section_list_title {
+  display: flex;
+  align-items: center;
+
+  > img {
+    margin-right: 12px;
+  }
+  > span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.012em;
+  }
+}

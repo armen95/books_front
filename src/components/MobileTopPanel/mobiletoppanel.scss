@@ -1,0 +1,36 @@
+.mobile_top_panel {
+  display: none;
+  box-sizing: border-box;
+  justify-content: end;
+
+  > img {
+    padding: 16px;
+    width: 18px;
+    height: 18px;
+    border-radius: 12px;
+    margin: 4px;
+    cursor: pointer;
+  }
+}
+
+//MODE
+.mobile_top_panel_dm {
+  background: #1e1e1e;
+  border: 3px solid #000000;
+
+  > img {
+    background: #000000;
+  }
+}
+.mobile_top_panel_lm {
+  background: #f0f0f0;
+  border: 3px solid #ffffff;
+}
+
+//MOBILE
+@media (max-width: 1024px) {
+  .mobile_top_panel {
+    display: flex;
+    justify-content: space-between;
+  }
+}

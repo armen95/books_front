@@ -1,0 +1,15 @@
+.books_lists_header {
+  display: grid;
+  grid-template-columns: 31% 23% 23% 23%;
+  border-radius: 18px;
+  align-items: center;
+  padding: 0 12px;
+
+  > div {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #969696;
+  }
+}

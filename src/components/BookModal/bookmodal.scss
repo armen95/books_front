@@ -1,0 +1,164 @@
+.modal_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+
+  > div {
+    width: 660px;
+    border-radius: 48px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    > .close_icon_block {
+      padding: 30px;
+      display: flex;
+      justify-content: flex-end;
+
+      > img {
+        cursor: pointer;
+      }
+    }
+
+    .book_img_block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > img {
+        width: 240px;
+        height: 360px;
+        border-radius: 24px;
+      }
+    }
+
+    .modal_book_name {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      margin-top: 42px;
+    }
+
+    .modal_book_by {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 6px;
+    }
+
+    .modal_book_description {
+      padding: 0 16%;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+      margin-top: 18px;
+    }
+    .modal_btns {
+      margin: 30px 0;
+      > .modal_close_btn {
+        padding: 12px 25px;
+        border-radius: 12px;
+        margin-right: 18px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      > .modal_reading_btn {
+        padding: 12px 87px;
+        background: #2478f0;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//MODE
+.modal_container_dm {
+  > div {
+    background: #1e1e1e;
+    color: #969696;
+
+    .modal_book_name {
+      color: white;
+    }
+    .modal_book_by {
+      color: #969696;
+    }
+    .modal_book_description {
+      color: #969696;
+    }
+    .modal_close_btn {
+      background: black;
+      color: white;
+    }
+  }
+}
+.modal_container_lm {
+  > div {
+    background: #ffffff;
+    color: #696969;
+    .modal_book_name {
+      color: black;
+    }
+    .modal_book_by {
+      color: #696969;
+    }
+    .modal_book_description {
+      color: #3c3c3c;
+    }
+    .modal_close_btn {
+      background: #f9f9f9;
+      color: #3c3c3c;
+    }
+  }
+}
+
+// MOBILE
+@media (max-width: 1024px) {
+  .modal_container {
+    > div {
+      border-radius: 24px;
+      padding: 18px;
+
+      > .close_icon_block {
+        padding: 0;
+      }
+
+      .book_img_block {
+        > img {
+          width: 120px;
+          height: 180px;
+        }
+      }
+
+      .modal_book_name {
+        margin-top: 30px;
+      }
+
+      .modal_btns {
+        margin: 30px 0;
+
+        > .modal_reading_btn {
+          padding: 12px 64px;
+        }
+      }
+    }
+  }
+}
